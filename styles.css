@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Kaushan Script', cursive;
+}
+
+body{
+    font-size: 3rem;
+    height: 100vh;
+}
+
+#container{
+    background: radial-gradient(#b1010142 1%, rgba(134, 76, 22, 0.945) 30%,black 60%);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header{
+    background: linear-gradient(to bottom, black);
+    height: 50px;
+}
+
+/* boton de menu */
+span{
+    font-size: 3rem;
+    padding: 10px;
+    color: white;
+}
+
+.menu{
+    width: 49px;
+}
+
+.menu a span:hover{
+    color: lightgray;
+    transition: all .3s;
+}
+
+.menu:hover > ul{
+    display: block;
+    /* background-color: rgba(134, 76, 22, 0.945); */
+}
+
+.submenu{
+    display: none;
+    font-size: 2.5rem;
+    padding-left: 0px;
+}
+header li ul{
+    padding-left: 10px;
+    list-style: none;
+
+}
+nav{
+    text-align: center;
+}
+
+/* imagen de portada */
+#imagen{
+    padding-top: 20px;
+    width: 100vw;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 5px 4px rgba(134, 76, 22, 0.945);
+}
+
+#content{
+    width: 70%;
+    margin: auto;
+    height: calc(100% - 75px);
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+}
+
+
+#titulo{
+    color: white;
+    text-shadow: 7px 7px 5px black;
+    text-align: center;
+}
+
+footer{
+    text-align: end;
+    color: white;
+    font-size: 0.7rem;
+    height: 20px;
+    padding-right: 10px;
+}
