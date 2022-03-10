@@ -44,14 +44,16 @@ span{
 
 .menu:hover > ul{
     display: block;
-    /* background-color: rgba(134, 76, 22, 0.945); */
 }
 
 .submenu{
     display: none;
     font-size: 2.5rem;
-    padding-left: 0px;
+    padding-left: 40px;
+    padding-top: 10px;
 }
+
+
 header li ul{
     padding-left: 10px;
     list-style: none;
