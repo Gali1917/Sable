@@ -4,6 +4,14 @@
     padding: 0px;
 }
 
+@font-face{
+    font-family: "cour";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/kaushanscript/v13/vm8vdRfvXFLG3OLnsO15WYS5DG72wNJHMw.woff2) format('woff2');
+}
+
 html{
     font-size: 62.5%;
     font-family: 'Kaushan Script', cursive;
@@ -11,19 +19,24 @@ html{
 
 body{
     font-size: 3rem;
-    height: 100vh;
+    background: radial-gradient(#b1010142 1%, rgba(134, 76, 22, 0.945) 30%,black 60%);
+    background-attachment: fixed;
 }
 
 #container{
-    background: radial-gradient(#b1010142 1%, rgba(134, 76, 22, 0.945) 30%,black 60%);
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
 }
 
 header{
     background: linear-gradient(to bottom, black);
-    height: 50px;
+    height: 430px;
+}
+
+#sable > li{
+    position: fixed;
+    margin: 1px;
 }
 
 /* boton de menu */
@@ -35,6 +48,8 @@ span{
 
 .menu{
     width: 49px;
+    z-index: 1;
+
 }
 
 .menu a span:hover{
@@ -47,12 +62,17 @@ span{
 }
 
 .submenu{
+    position: fixed;
     display: none;
-    font-size: 2.5rem;
-    padding-left: 40px;
-    padding-top: 10px;
+    font-size: 2rem;
+    /* padding-left: 40px;
+    padding-top: 180px; */
 }
-
+ .submenu li{
+    background-color: rgba(66, 66, 66, 0.856);
+    width: calc(100vw - 20px);
+    text-align: start;
+ }
 
 header li ul{
     padding-left: 10px;
@@ -65,9 +85,14 @@ nav{
 
 /* imagen de portada */
 #imagen{
-    padding-top: 20px;
     max-width: 100vw; 
     max-height: 70vh;
+}
+
+/* Imagenes de sushis */
+.img_sushi{
+    width: 100%;
+    max-width: 600px;
 }
 
 header a{
@@ -79,23 +104,51 @@ header a{
 #content{
     width: 70%;
     margin: auto;
-    height: calc(100% - 75px);
     text-align: center;
     color: white;
-    font-size: 6rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
 }
 
+.article1{
+    background-color: rgba(66, 66, 66, 0.281);
+    
+}
+
+#titulo_sushi{
+
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px rgba(134, 76, 22, 0.945);
+}
+
+
+.article{
+    font-family: "cour";
+    background-color: rgba(66, 66, 66, 0.281);
+    margin: 100px 0 50px 0;
+
+}
 
 #titulo{
     color: white;
     text-shadow: 7px 7px 5px black;
     text-align: center;
+    font-size: 7rem;
 }
 
 footer{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: black;
     text-align: end;
     color: white;
     font-size: 0.7rem;
     height: 20px;
+    width: 100vw;
     padding-right: 10px;
 }
